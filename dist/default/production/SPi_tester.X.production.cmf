@@ -1,0 +1,950 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 EE EE 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\SPi_tester.X.production.obj
+cinit CODE 0 70A 70A 26 1
+text0 CODE 0 310 310 D6 1
+text1 CODE 0 76A 76A 16 1
+text2 CODE 0 688 688 2C 1
+text3 CODE 0 780 780 16 1
+text4 CODE 0 7CE 7CE 4 1
+text5 CODE 0 628 628 32 1
+text6 CODE 0 56E 56E 4C 1
+text7 CODE 0 7A8 7A8 A 1
+text8 CODE 0 7B2 7B2 A 1
+text9 CODE 0 3E6 3E6 CC 1
+text10 CODE 0 4B2 4B2 BC 1
+text11 CODE 0 730 730 22 1
+text12 CODE 0 6E0 6E0 2A 1
+text13 CODE 0 7BC 7BC A 1
+text14 CODE 0 5BA 5BA 3A 1
+text15 CODE 0 796 796 12 1
+text16 CODE 0 7D2 7D2 4 1
+text17 CODE 0 5F4 5F4 34 1
+text19 CODE 0 F2 F2 21E 1
+text20 CODE 0 7C6 7C6 8 1
+text21 CODE 0 752 752 18 1
+text22 CODE 0 7D6 7D6 4 1
+text23 CODE 0 65A 65A 2E 1
+text24 CODE 0 6B4 6B4 2C 1
+cstackCOMRAM COMRAM 1 2D 2D 1D 1
+temp COMRAM 1 4A 4A 1 1
+bssBANK0 BANK0 1 60 60 40 1
+intcode CODE 0 8 8 E6 1
+bssCOMRAM COMRAM 1 1 1 2C 1
+mediumconst MEDIUMCONST 0 7E2C 7E2C 1D4 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM A0-7FF 1
+SFR F53-FFF 1
+BANK0 A0-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 7DA-7E2B 1
+STACK A0-7FF 1
+SMALLCONST 800-7E2B 1
+CODE 4-7 1
+CODE 7DA-7E2B 1
+BIGRAM 4B-5F 1
+BIGRAM A0-7FF 1
+COMRAM 4B-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 800-7E2B 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\SPi_tester.X.production.obj
+8 intcode CODE >146:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+8 intcode CODE >58:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+52 intcode CODE >61:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+56 intcode CODE >63:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+5C intcode CODE >65:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+60 intcode CODE >66:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+62 intcode CODE >67:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+68 intcode CODE >69:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+6C intcode CODE >70:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+6E intcode CODE >71:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+74 intcode CODE >73:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+84 intcode CODE >75:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+8A intcode CODE >77:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+A2 intcode CODE >88:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+6B4 text24 CODE >200:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6B4 text24 CODE >203:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6B8 text24 CODE >207:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6BA text24 CODE >208:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6BC text24 CODE >209:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6BC text24 CODE >212:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6D2 text24 CODE >213:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6D8 text24 CODE >215:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6DC text24 CODE >216:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6DC text24 CODE >217:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6DE text24 CODE >218:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+65A text23 CODE >181:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+65A text23 CODE >185:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+660 text23 CODE >187:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+676 text23 CODE >188:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+67C text23 CODE >190:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+680 text23 CODE >191:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+680 text23 CODE >192:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+682 text23 CODE >193:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+684 text23 CODE >194:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+684 text23 CODE >196:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7D6 text22 CODE >742:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+7D6 text22 CODE >745:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+7D8 text22 CODE >746:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+752 text21 CODE >565:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+752 text21 CODE >569:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+75A text21 CODE >572:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+75E text21 CODE >574:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+762 text21 CODE >575:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+764 text21 CODE >576:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+764 text21 CODE >578:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+7C6 text20 CODE >583:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+7C6 text20 CODE >586:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+7C8 text20 CODE >596:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+7CC text20 CODE >598:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+F2 text19 CODE >235:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+F2 text19 CODE >243:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+F4 text19 CODE >247:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+F8 text19 CODE >250:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+FA text19 CODE >251:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+FE text19 CODE >255:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+106 text19 CODE >257:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+108 text19 CODE >263:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+108 text19 CODE >265:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+10C text19 CODE >268:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+114 text19 CODE >269:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+120 text19 CODE >270:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+134 text19 CODE >272:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+13C text19 CODE >275:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+14A text19 CODE >278:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+152 text19 CODE >279:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+152 text19 CODE >283:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+154 text19 CODE >286:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+160 text19 CODE >289:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+162 text19 CODE >290:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+162 text19 CODE >293:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+164 text19 CODE >296:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+168 text19 CODE >299:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+16A text19 CODE >301:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+16A text19 CODE >306:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+16C text19 CODE >309:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+170 text19 CODE >311:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+172 text19 CODE >313:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+172 text19 CODE >315:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+176 text19 CODE >317:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+178 text19 CODE >318:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+17E text19 CODE >319:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+180 text19 CODE >320:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+180 text19 CODE >323:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+18E text19 CODE >326:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+192 text19 CODE >330:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+196 text19 CODE >331:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+198 text19 CODE >332:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+198 text19 CODE >335:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+19C text19 CODE >339:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+19E text19 CODE >341:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+19E text19 CODE >343:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1A2 text19 CODE >345:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1A4 text19 CODE >346:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1AA text19 CODE >347:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1AC text19 CODE >348:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1AC text19 CODE >352:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1AE text19 CODE >356:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1CE text19 CODE >359:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1D0 text19 CODE >362:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1D4 text19 CODE >365:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1D8 text19 CODE >368:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1DA text19 CODE >370:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1DA text19 CODE >383:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1E0 text19 CODE >386:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+1F0 text19 CODE >387:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+204 text19 CODE >388:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+214 text19 CODE >411:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+214 text19 CODE >414:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+218 text19 CODE >415:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+21C text19 CODE >418:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+220 text19 CODE >419:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+222 text19 CODE >420:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+222 text19 CODE >423:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+226 text19 CODE >426:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+228 text19 CODE >428:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+228 text19 CODE >431:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+22C text19 CODE >434:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+22E text19 CODE >437:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+230 text19 CODE >440:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+236 text19 CODE >442:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+238 text19 CODE >443:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+238 text19 CODE >446:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+240 text19 CODE >451:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+248 text19 CODE >454:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+24C text19 CODE >456:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+252 text19 CODE >457:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+254 text19 CODE >458:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+254 text19 CODE >466:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+256 text19 CODE >469:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+25A text19 CODE >472:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+25C text19 CODE >473:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+25C text19 CODE >476:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+26C text19 CODE >479:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+26E text19 CODE >481:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+26E text19 CODE >484:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+272 text19 CODE >488:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+274 text19 CODE >491:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+27A text19 CODE >494:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+27C text19 CODE >495:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+27E text19 CODE >496:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+27E text19 CODE >498:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+280 text19 CODE >499:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+284 text19 CODE >501:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+286 text19 CODE >503:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+286 text19 CODE >508:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+28A text19 CODE >511:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+28C text19 CODE >513:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+28E text19 CODE >515:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+28E text19 CODE >518:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+29E text19 CODE >521:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2A6 text19 CODE >528:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2A8 text19 CODE >531:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2AC text19 CODE >532:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2AE text19 CODE >533:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2AE text19 CODE >538:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2B0 text19 CODE >540:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2B4 text19 CODE >541:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2B4 text19 CODE >544:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2B6 text19 CODE >545:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2B8 text19 CODE >547:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2B8 text19 CODE >551:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2BE text19 CODE >552:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2C0 text19 CODE >554:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2C0 text19 CODE >558:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2C2 text19 CODE >559:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2C8 text19 CODE >562:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+2CA text19 CODE >261:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+5F4 text17 CODE >128:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5F4 text17 CODE >130:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5F8 text17 CODE >132:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5FE text17 CODE >136:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+614 text17 CODE >137:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+61A text17 CODE >139:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+61E text17 CODE >140:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+61E text17 CODE >141:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+620 text17 CODE >142:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+622 text17 CODE >143:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+624 text17 CODE >145:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7D2 text16 CODE >118:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7D2 text16 CODE >120:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+796 text15 CODE >140:C:\Projects\SPi_tester.X\main.c
+796 text15 CODE >142:C:\Projects\SPi_tester.X\main.c
+798 text15 CODE >144:C:\Projects\SPi_tester.X\main.c
+79C text15 CODE >142:C:\Projects\SPi_tester.X\main.c
+79C text15 CODE >145:C:\Projects\SPi_tester.X\main.c
+5BA text14 CODE >148:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5BC text14 CODE >150:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5C2 text14 CODE >154:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5C6 text14 CODE >156:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5CA text14 CODE >157:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5CC text14 CODE >158:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5CC text14 CODE >160:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5CE text14 CODE >161:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5E4 text14 CODE >162:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5EA text14 CODE >164:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5EE text14 CODE >165:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5EE text14 CODE >166:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5F0 text14 CODE >167:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5F0 text14 CODE >168:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5F2 text14 CODE >169:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7BC text13 CODE >176:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7BE text13 CODE >178:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7C4 text13 CODE >179:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+6E0 text12 CODE >464:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+6E0 text12 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+6E8 text12 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+6EA text12 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+6F0 text12 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+6F0 text12 CODE >1533:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+730 text11 CODE >149:C:\Projects\SPi_tester.X\main.c
+730 text11 CODE >151:C:\Projects\SPi_tester.X\main.c
+73C text11 CODE >152:C:\Projects\SPi_tester.X\main.c
+748 text11 CODE >154:C:\Projects\SPi_tester.X\main.c
+74C text11 CODE >155:C:\Projects\SPi_tester.X\main.c
+750 text11 CODE >157:C:\Projects\SPi_tester.X\main.c
+4B2 text10 CODE >216:C:\Projects\SPi_tester.X\main.c
+4B2 text10 CODE >218:C:\Projects\SPi_tester.X\main.c
+4B6 text10 CODE >220:C:\Projects\SPi_tester.X\main.c
+4B8 text10 CODE >222:C:\Projects\SPi_tester.X\main.c
+4C4 text10 CODE >223:C:\Projects\SPi_tester.X\main.c
+4D0 text10 CODE >224:C:\Projects\SPi_tester.X\main.c
+4DC text10 CODE >225:C:\Projects\SPi_tester.X\main.c
+4E8 text10 CODE >226:C:\Projects\SPi_tester.X\main.c
+4F4 text10 CODE >227:C:\Projects\SPi_tester.X\main.c
+500 text10 CODE >228:C:\Projects\SPi_tester.X\main.c
+50C text10 CODE >230:C:\Projects\SPi_tester.X\main.c
+512 text10 CODE >231:C:\Projects\SPi_tester.X\main.c
+516 text10 CODE >233:C:\Projects\SPi_tester.X\main.c
+518 text10 CODE >255:C:\Projects\SPi_tester.X\main.c
+518 text10 CODE >258:C:\Projects\SPi_tester.X\main.c
+524 text10 CODE >259:C:\Projects\SPi_tester.X\main.c
+526 text10 CODE >262:C:\Projects\SPi_tester.X\main.c
+526 text10 CODE >264:C:\Projects\SPi_tester.X\main.c
+532 text10 CODE >267:C:\Projects\SPi_tester.X\main.c
+534 text10 CODE >233:C:\Projects\SPi_tester.X\main.c
+55C text10 CODE >220:C:\Projects\SPi_tester.X\main.c
+55C text10 CODE >267:C:\Projects\SPi_tester.X\main.c
+3E6 text9 CODE >159:C:\Projects\SPi_tester.X\main.c
+3E6 text9 CODE >161:C:\Projects\SPi_tester.X\main.c
+3EA text9 CODE >163:C:\Projects\SPi_tester.X\main.c
+3EC text9 CODE >165:C:\Projects\SPi_tester.X\main.c
+3F8 text9 CODE >166:C:\Projects\SPi_tester.X\main.c
+404 text9 CODE >167:C:\Projects\SPi_tester.X\main.c
+410 text9 CODE >168:C:\Projects\SPi_tester.X\main.c
+41C text9 CODE >169:C:\Projects\SPi_tester.X\main.c
+428 text9 CODE >170:C:\Projects\SPi_tester.X\main.c
+434 text9 CODE >171:C:\Projects\SPi_tester.X\main.c
+440 text9 CODE >173:C:\Projects\SPi_tester.X\main.c
+446 text9 CODE >174:C:\Projects\SPi_tester.X\main.c
+44A text9 CODE >176:C:\Projects\SPi_tester.X\main.c
+44C text9 CODE >178:C:\Projects\SPi_tester.X\main.c
+44C text9 CODE >180:C:\Projects\SPi_tester.X\main.c
+44E text9 CODE >181:C:\Projects\SPi_tester.X\main.c
+450 text9 CODE >183:C:\Projects\SPi_tester.X\main.c
+450 text9 CODE >185:C:\Projects\SPi_tester.X\main.c
+452 text9 CODE >186:C:\Projects\SPi_tester.X\main.c
+454 text9 CODE >188:C:\Projects\SPi_tester.X\main.c
+454 text9 CODE >190:C:\Projects\SPi_tester.X\main.c
+456 text9 CODE >191:C:\Projects\SPi_tester.X\main.c
+458 text9 CODE >193:C:\Projects\SPi_tester.X\main.c
+458 text9 CODE >195:C:\Projects\SPi_tester.X\main.c
+45A text9 CODE >196:C:\Projects\SPi_tester.X\main.c
+45C text9 CODE >198:C:\Projects\SPi_tester.X\main.c
+45C text9 CODE >201:C:\Projects\SPi_tester.X\main.c
+468 text9 CODE >202:C:\Projects\SPi_tester.X\main.c
+46A text9 CODE >205:C:\Projects\SPi_tester.X\main.c
+46A text9 CODE >207:C:\Projects\SPi_tester.X\main.c
+476 text9 CODE >210:C:\Projects\SPi_tester.X\main.c
+478 text9 CODE >176:C:\Projects\SPi_tester.X\main.c
+4A0 text9 CODE >163:C:\Projects\SPi_tester.X\main.c
+4A0 text9 CODE >210:C:\Projects\SPi_tester.X\main.c
+7B2 text8 CODE >224:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7B2 text8 CODE >225:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7BA text8 CODE >226:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7A8 text7 CODE >220:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7A8 text7 CODE >221:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+7B0 text7 CODE >222:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+56E text6 CODE >75:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+56E text6 CODE >78:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+570 text6 CODE >79:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+57C text6 CODE >80:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+57E text6 CODE >81:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+58A text6 CODE >85:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+58E text6 CODE >88:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+592 text6 CODE >91:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+596 text6 CODE >94:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+59A text6 CODE >97:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+59E text6 CODE >101:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5A2 text6 CODE >102:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5A6 text6 CODE >103:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5AA text6 CODE >105:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5AE text6 CODE >106:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5B2 text6 CODE >107:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5B6 text6 CODE >110:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+5B8 text6 CODE >111:C:\Projects\SPi_tester.X\mcc_generated_files/eusart1.c
+628 text5 CODE >198:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+628 text5 CODE >200:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+630 text5 CODE >201:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+638 text5 CODE >202:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+63A text5 CODE >203:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+63C text5 CODE >205:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+640 text5 CODE >208:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+644 text5 CODE >210:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+648 text5 CODE >212:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+64C text5 CODE >214:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+650 text5 CODE >217:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+652 text5 CODE >218:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+654 text5 CODE >221:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+656 text5 CODE >222:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+658 text5 CODE >224:C:\Projects\SPi_tester.X\mcc_generated_files/i2c1.c
+7CE text4 CODE >52:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+7CE text4 CODE >55:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+7D0 text4 CODE >56:C:\Projects\SPi_tester.X\mcc_generated_files/interrupt_manager.c
+780 text3 CODE >60:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+780 text3 CODE >63:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+784 text3 CODE >65:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+788 text3 CODE >67:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+78C text3 CODE >69:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+790 text3 CODE >71:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+688 text2 CODE >57:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+688 text2 CODE >62:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+68C text2 CODE >63:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+690 text2 CODE >64:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+694 text2 CODE >69:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+698 text2 CODE >70:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+69A text2 CODE >71:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+69E text2 CODE >76:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+6A4 text2 CODE >77:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+6A8 text2 CODE >78:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+6AC text2 CODE >83:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+6B0 text2 CODE >84:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+6B2 text2 CODE >96:C:\Projects\SPi_tester.X\mcc_generated_files/pin_manager.c
+76A text1 CODE >50:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+76A text1 CODE >53:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+76E text1 CODE >54:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+772 text1 CODE >55:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+776 text1 CODE >56:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+77A text1 CODE >57:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+77E text1 CODE >58:C:\Projects\SPi_tester.X\mcc_generated_files/mcc.c
+310 text0 CODE >58:C:\Projects\SPi_tester.X\main.c
+310 text0 CODE >61:C:\Projects\SPi_tester.X\main.c
+314 text0 CODE >68:C:\Projects\SPi_tester.X\main.c
+316 text0 CODE >74:C:\Projects\SPi_tester.X\main.c
+318 text0 CODE >79:C:\Projects\SPi_tester.X\main.c
+318 text0 CODE >81:C:\Projects\SPi_tester.X\main.c
+31C text0 CODE >83:C:\Projects\SPi_tester.X\main.c
+31E text0 CODE >85:C:\Projects\SPi_tester.X\main.c
+32A text0 CODE >86:C:\Projects\SPi_tester.X\main.c
+336 text0 CODE >87:C:\Projects\SPi_tester.X\main.c
+342 text0 CODE >88:C:\Projects\SPi_tester.X\main.c
+34E text0 CODE >89:C:\Projects\SPi_tester.X\main.c
+35A text0 CODE >91:C:\Projects\SPi_tester.X\main.c
+366 text0 CODE >93:C:\Projects\SPi_tester.X\main.c
+36C text0 CODE >94:C:\Projects\SPi_tester.X\main.c
+372 text0 CODE >96:C:\Projects\SPi_tester.X\main.c
+374 text0 CODE >98:C:\Projects\SPi_tester.X\main.c
+374 text0 CODE >100:C:\Projects\SPi_tester.X\main.c
+378 text0 CODE >101:C:\Projects\SPi_tester.X\main.c
+37A text0 CODE >103:C:\Projects\SPi_tester.X\main.c
+37A text0 CODE >105:C:\Projects\SPi_tester.X\main.c
+37E text0 CODE >106:C:\Projects\SPi_tester.X\main.c
+380 text0 CODE >108:C:\Projects\SPi_tester.X\main.c
+380 text0 CODE >110:C:\Projects\SPi_tester.X\main.c
+386 text0 CODE >111:C:\Projects\SPi_tester.X\main.c
+388 text0 CODE >113:C:\Projects\SPi_tester.X\main.c
+388 text0 CODE >115:C:\Projects\SPi_tester.X\main.c
+38E text0 CODE >116:C:\Projects\SPi_tester.X\main.c
+390 text0 CODE >118:C:\Projects\SPi_tester.X\main.c
+390 text0 CODE >121:C:\Projects\SPi_tester.X\main.c
+39C text0 CODE >122:C:\Projects\SPi_tester.X\main.c
+39E text0 CODE >125:C:\Projects\SPi_tester.X\main.c
+39E text0 CODE >127:C:\Projects\SPi_tester.X\main.c
+3AA text0 CODE >130:C:\Projects\SPi_tester.X\main.c
+3AC text0 CODE >96:C:\Projects\SPi_tester.X\main.c
+3D4 text0 CODE >83:C:\Projects\SPi_tester.X\main.c
+3D4 text0 CODE >130:C:\Projects\SPi_tester.X\main.c
+70A cinit CODE >3174:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+70A cinit CODE >3176:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+70A cinit CODE >3179:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+70A cinit CODE >3245:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+70E cinit CODE >3246:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+710 cinit CODE >3247:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+710 cinit CODE >3248:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+712 cinit CODE >3249:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+714 cinit CODE >3250:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+716 cinit CODE >3253:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+71A cinit CODE >3254:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+71C cinit CODE >3255:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+71C cinit CODE >3256:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+71E cinit CODE >3257:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+720 cinit CODE >3258:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+722 cinit CODE >3264:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+722 cinit CODE >3266:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+724 cinit CODE >3267:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+726 cinit CODE >3269:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+728 cinit CODE >3270:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+72A cinit CODE >3271:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+72C cinit CODE >3272:C:\Users\cbrennem\AppData\Local\Temp\s5b8.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 7E2C 0 MEDIUMCONST 0 mediumconst dist/default/production\SPi_tester.X.production.obj
+_I2C1_Initialize 628 0 CODE 0 text5 dist/default/production\SPi_tester.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hspace_1 A0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_p_i2c1_trb_current C 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\SPi_tester.X.production.obj
+__mediumconst 7E2C 0 MEDIUMCONST 0 mediumconst C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+_EUSART1_Initialize 56E 0 CODE 0 text6 dist/default/production\SPi_tester.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\SPi_tester.X.production.obj
+__end_of_INTERRUPT_Initialize 7D2 0 CODE 0 text4 dist/default/production\SPi_tester.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\SPi_tester.X.production.obj
+_LATA F89 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_LATC F8B 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_WPUB F85 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+_main 310 0 CODE 0 text0 dist/default/production\SPi_tester.X.production.obj
+btemp 4A 0 COMRAM 1 temp dist/default/production\SPi_tester.X.production.obj
+__end_of_Flush_EUSART 7A8 0 CODE 0 text15 dist/default/production\SPi_tester.X.production.obj
+start EE 0 CODE 0 init C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+__end_of_EUSART1_is_rx_ready 7D6 0 CODE 0 text16 dist/default/production\SPi_tester.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__size_of_EUSART1_Receive_ISR 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_I2C1_ISR 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+I2C1_ISR@i2c_10bit_address_restart 18 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__end_of_EUSART1_SetTxInterruptHandler 7B2 0 CODE 0 text7 dist/default/production\SPi_tester.X.production.obj
+_p_i2c1_current A 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+I2C1_ISR@i2c_address 2B 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Hpowerup EE 0 CODE 0 powerup dist/default/production\SPi_tester.X.production.obj
+printf@c 47 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+printf@f 43 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+intlevel0 0 0 CODE 0 text C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+intlevel1 0 0 CODE 0 text C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+intlevel2 0 0 CODE 0 text C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+intlevel3 0 0 CODE 0 text C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+I2C1_ISR@pi2c_buf_ptr 8 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\SPi_tester.X.production.obj
+wtemp6 4B 0 COMRAM 1 temp dist/default/production\SPi_tester.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\SPi_tester.X.production.obj
+I2C1_ISR@i2c_bytes_left 19 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+EUSART1_Write@txData 41 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\SPi_tester.X.production.obj
+_EUSART1_Receive_ISR 6B4 0 CODE 0 text24 dist/default/production\SPi_tester.X.production.obj
+__end_of_I2C1_FunctionComplete 76A 0 CODE 0 text21 dist/default/production\SPi_tester.X.production.obj
+_ACTCON FB5 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_ANSELA F5B 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_ANSELB F5C 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_ANSELC F5D 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+_I2C1_ISR F2 0 CODE 0 text19 dist/default/production\SPi_tester.X.production.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+__end_of_INTERRUPT_InterruptManager EE 0 CODE 0 intcode dist/default/production\SPi_tester.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\SPi_tester.X.production.obj
+__end_of_EUSART1_SetRxInterruptHandler 7BC 0 CODE 0 text8 dist/default/production\SPi_tester.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\SPi_tester.X.production.obj
+__end_of_I2C1_ISR 310 0 CODE 0 text19 dist/default/production\SPi_tester.X.production.obj
+_I2C1_FunctionComplete 752 0 CODE 0 text21 dist/default/production\SPi_tester.X.production.obj
+_TXSTA1bits FAC 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hmediumconst 8000 0 MEDIUMCONST 0 mediumconst dist/default/production\SPi_tester.X.production.obj
+?_printf 43 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+EUSART1_SetTxInterruptHandler@interruptHandler 41 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Hintcodelo EE 0 CODE 0 intcodelo dist/default/production\SPi_tester.X.production.obj
+__CFG_CCP2MX$RC1 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_putch 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_i2c1_trb_count 1A 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lintcodelo EE 0 CODE 0 intcodelo dist/default/production\SPi_tester.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_PIN_MANAGER_Initialize 688 0 CODE 0 text2 dist/default/production\SPi_tester.X.production.obj
+__CFG_CFGPLLEN$ON 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+start_initialization 70A 0 CODE 0 cinit dist/default/production\SPi_tester.X.production.obj
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\SPi_tester.X.production.obj
+_PLLRDY 7E97 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_nPWRTEN$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_RCREG1 FAE 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_RCSTA1 FAB 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_EUSART1_SetTxInterruptHandler 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__end_of_SYSTEM_Initialize 780 0 CODE 0 text1 dist/default/production\SPi_tester.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_SPBRG1 FAF 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_TXREG1 FAD 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_TXSTA1 FAC 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+I2C1_MasterRead@trBlock 1C 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__end_of_printf 70A 0 CODE 0 text12 dist/default/production\SPi_tester.X.production.obj
+__end_of_EUSART1_Receive_ISR 6E0 0 CODE 0 text24 dist/default/production\SPi_tester.X.production.obj
+__size_of_EUSART1_Initialize 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__end_of_LED_Control 752 0 CODE 0 text11 dist/default/production\SPi_tester.X.production.obj
+_EUSART1_Write 5BA 0 CODE 0 text14 dist/default/production\SPi_tester.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\SPi_tester.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\SPi_tester.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\SPi_tester.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\SPi_tester.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\SPi_tester.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\SPi_tester.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\SPi_tester.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\SPi_tester.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\SPi_tester.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\SPi_tester.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\SPi_tester.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\SPi_tester.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\SPi_tester.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\SPi_tester.X.production.obj
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\SPi_tester.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\SPi_tester.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\SPi_tester.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\SPi_tester.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\SPi_tester.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\SPi_tester.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\SPi_tester.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\SPi_tester.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\SPi_tester.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\SPi_tester.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\SPi_tester.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\SPi_tester.X.production.obj
+__size_of_EUSART1_Transmit_ISR 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\SPi_tester.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\SPi_tester.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+_BAUDCON1 FB8 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\SPi_tester.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\SPi_tester.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\SPi_tester.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\SPi_tester.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\SPi_tester.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\SPi_tester.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\SPi_tester.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\SPi_tester.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\SPi_tester.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\SPi_tester.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\SPi_tester.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\SPi_tester.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\SPi_tester.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\SPi_tester.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\SPi_tester.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\SPi_tester.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\SPi_tester.X.production.obj
+_eusart1TxBufferRemaining 15 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\SPi_tester.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\SPi_tester.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\SPi_tester.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\SPi_tester.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\SPi_tester.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\SPi_tester.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\SPi_tester.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\SPi_tester.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\SPi_tester.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\SPi_tester.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\SPi_tester.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\SPi_tester.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\SPi_tester.X.production.obj
+__end_of_EUSART1_Transmit_ISR 688 0 CODE 0 text23 dist/default/production\SPi_tester.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_INTERRUPT_Initialize 7CE 0 CODE 0 text4 dist/default/production\SPi_tester.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\SPi_tester.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\SPi_tester.X.production.obj
+__Hinit F2 0 CODE 0 init dist/default/production\SPi_tester.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\SPi_tester.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\SPi_tester.X.production.obj
+__Htemp 4B 0 COMRAM 1 temp dist/default/production\SPi_tester.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\SPi_tester.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\SPi_tester.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\SPi_tester.X.production.obj
+__Linit EE 0 CODE 0 init dist/default/production\SPi_tester.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\SPi_tester.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\SPi_tester.X.production.obj
+__Ltemp 4A 0 COMRAM 1 temp dist/default/production\SPi_tester.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\SPi_tester.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_I2C1_BusCollisionISR 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_SSP1CON1 FC6 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_SSP1CON3 FCB 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_SSP1STAT FC7 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+int$flags 4A 0 COMRAM 1 temp dist/default/production\SPi_tester.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\SPi_tester.X.production.obj
+_EUSART1_RxDefaultInterruptHandler E 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\SPi_tester.X.production.obj
+_Relay_Control 3E6 0 CODE 0 text9 dist/default/production\SPi_tester.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__S1 A0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_EUSART1_SetRxInterruptHandler 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__end_of_I2C1_BusCollisionISR 7DA 0 CODE 0 text22 dist/default/production\SPi_tester.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\SPi_tester.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\SPi_tester.X.production.obj
+_SYSTEM_Initialize 76A 0 CODE 0 text1 dist/default/production\SPi_tester.X.production.obj
+__CFG_BORV$190 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\SPi_tester.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\SPi_tester.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\SPi_tester.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\SPi_tester.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\SPi_tester.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\SPi_tester.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\SPi_tester.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\SPi_tester.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\SPi_tester.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\SPi_tester.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\SPi_tester.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\SPi_tester.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\SPi_tester.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\SPi_tester.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\SPi_tester.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\SPi_tester.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\SPi_tester.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\SPi_tester.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\SPi_tester.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\SPi_tester.X.production.obj
+__CFG_LS48MHZ$SYS48X8 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/default/production\SPi_tester.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_PIE2bits FA0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_EUSART1_Write 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_eusart1RxHead 14 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+_eusart1RxTail 13 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__ptext10 4B2 0 CODE 0 text10 dist/default/production\SPi_tester.X.production.obj
+__ptext11 730 0 CODE 0 text11 dist/default/production\SPi_tester.X.production.obj
+__ptext12 6E0 0 CODE 0 text12 dist/default/production\SPi_tester.X.production.obj
+__ptext13 7BC 0 CODE 0 text13 dist/default/production\SPi_tester.X.production.obj
+__ptext14 5BA 0 CODE 0 text14 dist/default/production\SPi_tester.X.production.obj
+__ptext15 796 0 CODE 0 text15 dist/default/production\SPi_tester.X.production.obj
+__ptext16 7D2 0 CODE 0 text16 dist/default/production\SPi_tester.X.production.obj
+__ptext17 5F4 0 CODE 0 text17 dist/default/production\SPi_tester.X.production.obj
+__ptext19 F2 0 CODE 0 text19 dist/default/production\SPi_tester.X.production.obj
+__ptext20 7C6 0 CODE 0 text20 dist/default/production\SPi_tester.X.production.obj
+__ptext21 752 0 CODE 0 text21 dist/default/production\SPi_tester.X.production.obj
+__ptext22 7D6 0 CODE 0 text22 dist/default/production\SPi_tester.X.production.obj
+__ptext23 65A 0 CODE 0 text23 dist/default/production\SPi_tester.X.production.obj
+__ptext24 6B4 0 CODE 0 text24 dist/default/production\SPi_tester.X.production.obj
+__ptext25 0 0 CODE 0 text25 dist/default/production\SPi_tester.X.production.obj
+__CFG_PCLKEN$ON 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__end_of_PIN_MANAGER_Initialize 6B4 0 CODE 0 text2 dist/default/production\SPi_tester.X.production.obj
+_Power_Monitoring 4B2 0 CODE 0 text10 dist/default/production\SPi_tester.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\SPi_tester.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\SPi_tester.X.production.obj
+_eusart1TxHead 17 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+_eusart1TxTail 16 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\SPi_tester.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\SPi_tester.X.production.obj
+Power_Monitoring@power_selection 48 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__end_of_I2C1_Stop 7CE 0 CODE 0 text20 dist/default/production\SPi_tester.X.production.obj
+_printf 6E0 0 CODE 0 text12 dist/default/production\SPi_tester.X.production.obj
+_LATAbits F89 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_I2C1_Stop 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_EUSART1_Read 5F4 0 CODE 0 text17 dist/default/production\SPi_tester.X.production.obj
+__size_of_I2C1_FunctionComplete 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_RCSTA1bits FAB 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\SPi_tester.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\SPi_tester.X.production.obj
+__size_of_LED_Control 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+stackhi 7FF 0 ABS 0 - C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+stacklo A0 0 ABS 0 - C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+__end_of_EUSART1_Write 5F4 0 CODE 0 text14 dist/default/production\SPi_tester.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\SPi_tester.X.production.obj
+__CFG_PLLSEL$PLL3X 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_Relay_Control 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_OSCCON2 FD2 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_OSCTUNE F9B 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\SPi_tester.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\SPi_tester.X.production.obj
+_I2C1_Stop 7C6 0 CODE 0 text20 dist/default/production\SPi_tester.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+main@selection 49 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_PIR2bits FA1 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+I2C1_MasterWrite@trBlock 21 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+printf@ap 45 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+_eusart1TxBuffer 80 0 BANK0 1 bssBANK0 dist/default/production\SPi_tester.X.production.obj
+_EUSART1_SetTxInterruptHandler 7A8 0 CODE 0 text7 dist/default/production\SPi_tester.X.production.obj
+end_of_initialization 722 0 CODE 0 cinit dist/default/production\SPi_tester.X.production.obj
+EUSART1_Read@readValue 41 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\SPi_tester.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\SPi_tester.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_RCONbits FD0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_printf 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_EUSART1_Read 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\SPi_tester.X.production.obj
+EUSART1_SetRxInterruptHandler@interruptHandler 41 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\SPi_tester.X.production.obj
+__end_of_Relay_Control 4B2 0 CODE 0 text9 dist/default/production\SPi_tester.X.production.obj
+__size_of_EUSART1_is_rx_ready 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\SPi_tester.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\SPi_tester.X.production.obj
+__pcinit 70A 0 CODE 0 cinit dist/default/production\SPi_tester.X.production.obj
+__ptext0 310 0 CODE 0 text0 dist/default/production\SPi_tester.X.production.obj
+__ptext1 76A 0 CODE 0 text1 dist/default/production\SPi_tester.X.production.obj
+__ptext2 688 0 CODE 0 text2 dist/default/production\SPi_tester.X.production.obj
+__ptext3 780 0 CODE 0 text3 dist/default/production\SPi_tester.X.production.obj
+__ptext4 7CE 0 CODE 0 text4 dist/default/production\SPi_tester.X.production.obj
+__ptext5 628 0 CODE 0 text5 dist/default/production\SPi_tester.X.production.obj
+__ptext6 56E 0 CODE 0 text6 dist/default/production\SPi_tester.X.production.obj
+__ptext7 7A8 0 CODE 0 text7 dist/default/production\SPi_tester.X.production.obj
+__ptext8 7B2 0 CODE 0 text8 dist/default/production\SPi_tester.X.production.obj
+__ptext9 3E6 0 CODE 0 text9 dist/default/production\SPi_tester.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\SPi_tester.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\SPi_tester.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\SPi_tester.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\SPi_tester.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\SPi_tester.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\SPi_tester.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\SPi_tester.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\SPi_tester.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\SPi_tester.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\SPi_tester.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\SPi_tester.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\SPi_tester.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\SPi_tester.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\SPi_tester.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\SPi_tester.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\SPi_tester.X.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\cbrennem\AppData\Local\Temp\s5b8.obj
+__end_of_Power_Monitoring 56E 0 CODE 0 text10 dist/default/production\SPi_tester.X.production.obj
+__Lpowerup EE 0 CODE 0 powerup dist/default/production\SPi_tester.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\SPi_tester.X.production.obj
+__end_of_EUSART1_Read 628 0 CODE 0 text17 dist/default/production\SPi_tester.X.production.obj
+_i2c1_state 1B 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\SPi_tester.X.production.obj
+__size_of_Power_Monitoring 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_SDOMX$RB3 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_EUSART1_TxDefaultInterruptHandler 10 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_CPUDIV$CLKDIV3 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\SPi_tester.X.production.obj
+__end_of__initialization 722 0 CODE 0 cinit dist/default/production\SPi_tester.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\SPi_tester.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\SPi_tester.X.production.obj
+_SSP1CON1bits FC6 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_SSP1CON2bits FC5 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_SPBRGH1 FB0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_EUSART1_SetRxInterruptHandler 7B2 0 CODE 0 text8 dist/default/production\SPi_tester.X.production.obj
+_EUSART1_is_rx_ready 7D2 0 CODE 0 text16 dist/default/production\SPi_tester.X.production.obj
+_i2c1_object 1 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__CFG_nLPBOR$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_eusart1RxBuffer 60 0 BANK0 1 bssBANK0 dist/default/production\SPi_tester.X.production.obj
+__pcstackCOMRAM 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+_EUSART1_Transmit_ISR 65A 0 CODE 0 text23 dist/default/production\SPi_tester.X.production.obj
+__pmediumconst 7E2C 0 MEDIUMCONST 0 mediumconst dist/default/production\SPi_tester.X.production.obj
+__end_of_I2C1_Initialize 65A 0 CODE 0 text5 dist/default/production\SPi_tester.X.production.obj
+_SSP1ADD FC8 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_SSP1BUF FC9 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_Flush_EUSART 796 0 CODE 0 text15 dist/default/production\SPi_tester.X.production.obj
+putch@txData 42 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__end_of_main 3E6 0 CODE 0 text0 dist/default/production\SPi_tester.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\SPi_tester.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__end_of_putch 7C6 0 CODE 0 text13 dist/default/production\SPi_tester.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\SPi_tester.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\SPi_tester.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\SPi_tester.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\SPi_tester.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\SPi_tester.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\SPi_tester.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_putch 7BC 0 CODE 0 text13 dist/default/production\SPi_tester.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_eusart1RxCount 12 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+_I2C1_BusCollisionISR 7D6 0 CODE 0 text22 dist/default/production\SPi_tester.X.production.obj
+__end_of_EUSART1_Initialize 5BA 0 CODE 0 text6 dist/default/production\SPi_tester.X.production.obj
+__end_of_OSCILLATOR_Initialize 796 0 CODE 0 text3 dist/default/production\SPi_tester.X.production.obj
+Relay_Control@relay_selection 48 0 COMRAM 1 cstackCOMRAM dist/default/production\SPi_tester.X.production.obj
+__initialization 70A 0 CODE 0 cinit dist/default/production\SPi_tester.X.production.obj
+_i2c1_tr_queue 26 0 COMRAM 1 bssCOMRAM dist/default/production\SPi_tester.X.production.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\SPi_tester.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\SPi_tester.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\SPi_tester.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\SPi_tester.X.production.obj
+__CFG_T3CMX$RC0 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\SPi_tester.X.production.obj
+__Hintcode EE 0 CODE 0 intcode dist/default/production\SPi_tester.X.production.obj
+__size_of_INTERRUPT_Initialize 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+__size_of_Flush_EUSART 0 0 ABS 0 - dist/default/production\SPi_tester.X.production.obj
+_LED_Control 730 0 CODE 0 text11 dist/default/production\SPi_tester.X.production.obj
+_OSCILLATOR_Initialize 780 0 CODE 0 text3 dist/default/production\SPi_tester.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 40 1
+intcode 0 8 8 7D2 1
+bssCOMRAM 1 1 1 4A 1
+mediumconst 0 7E2C 7E2C 1D4 1
+config 0 300000 300000 E 1
